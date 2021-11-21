@@ -1,0 +1,166 @@
+.header{
+     height: 120px;
+     background-image: linear-gradient(0, #fe6433, #f53e2d);
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header__navbar-list{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 8px;
+}
+
+.header__navbar-item{
+    margin: 0 8px;
+    position: relative;
+}
+
+.header__navbar-item--for-qr:hover .header__navbar-qr{
+    display: block;
+}
+
+
+.header__navbar-item,
+.header__navbar-item-link{
+    display: inline-block;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight:300;
+}
+
+.header__navbar-item:hover,
+.header__navbar-item-link:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header__navbar-item-strong{
+    font-weight: 400;
+}
+
+.header__navbar-item--separate::after{
+    content: "";
+    top: 50%;
+    height: 12px;
+    right: -9px;
+    display: block;
+    position: absolute;
+    transform: translateY(-50%);
+    border-left: 1px solid #Fb9086;
+}
+
+.header__navbar-icon--social--media{
+    color: var(--white-color);
+    text-decoration: none;
+}
+/* Header QR code */
+.header__navbar-qr{
+    top: 150%;
+    left: 0;
+    width: 186px;
+    padding: 8px;
+    display: none;
+    border-radius: 2px;
+    position: absolute;
+    background-color: #fff;
+    animation: fadeIn ease-in 0.3s;
+}
+
+.header__navbar-qr::before{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -10px;
+    height: 20px;
+    content: "";
+    display: block;
+}
+
+.header__navbar-qr-img{
+    width: 100%;
+}
+
+.header__qr-apps{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__qr-download-img{
+    height: 15px;
+}
+
+.header__qr-link:first-child{
+    margin-left: 11px;
+}
+
+.header__qr-link:last-child{
+    margin-right: 11px;
+}
+
+/* Header Notification */
+.header__notification{
+    position: absolute;
+    top: 100%;
+    right: 0;;
+    width: 400px;
+    border: 1px solid #d3d3d3;
+    background-color: var(--white-color);
+}
+
+.header__notification-header{
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.header__notification-header h3{
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.header__notification-list{
+    padding-left: 0;
+}
+
+.header__notification-item{
+}
+
+.header__notification-link{
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    text-decoration: none;
+    background-color: rgba(red, green, blue, alpha);
+}
+
+.header__notification-img{
+    width: 48px;
+    object-fit: contain;
+}
+
+.header__notification-information{
+    margin-left: 12px;
+}
+
+.header__notification-name{
+    display: block;
+    color: var(--black-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 8px 0;
+}
+.header__notification-description{
+    display: block;
+    color:#888;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 8px 0;
+}
